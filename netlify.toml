@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/*"
+  status = 200
+  force = true
+  conditions = {Role = ["admin"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/login/"
+  force = true
+  status = 401
+
+[functions]
+  directory = "functions"
